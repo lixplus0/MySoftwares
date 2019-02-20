@@ -1,4 +1,6 @@
 @echo off
+set /p tishi=请确认，所有的文件已经压缩到 50MB 以下
+set /p tishi2=请再次确认，所有的文件已经压缩到 50MB 以下
 echo 正在提交到暂存区...
 git add .
 echo.
