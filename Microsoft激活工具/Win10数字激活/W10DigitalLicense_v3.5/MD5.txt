@@ -1,14 +1,33 @@
 ﻿Name: DigitalLicense.exe
-Size: 1.96 MB (2,064,320 byte)
-Version: 2.8.0.0
+Size: 1.44 MB (1,515,520 Byte)
+Version: 3.5.0.0
 
-MD5: F4C36049D4DC9C3920EC9B4C382C474E
-SHA1: F9B6016E0349CC831760ED4BDC020D44678AA039
-SHA256: C5D677506A27152285D515952310B35411546AD25AFF6492595BEE2604177529
+MD5: 36FD288D3A31D78C75D8D4EF86024941
+SHA1: 68D8FC0AF53C612E0967D53F2F4F4963167B7114
 
-Virustotal
-https://www.virustotal.com/#/file/c5d677506a27152285d515952310b35411546ad25aff6492595bee2604177529/detection
+v3.5
+不再依赖注册表来获取门票，同步更新了s1ave77的 slc_hwid.dll 和 slc_kms38.dll，以及ADK版的gatherosstate。
+体积更小了，获取门票速度更快速了。
+增加显示已安装KEY的功能，双击可复制到剪贴板。
+更新英文帮助说明，添加ServerRdsh的密钥。
 
+
+v3.1
+Google Translate:
+/Q参数运行时，将不再隐藏GUI界面。
+When the /Q parameter is run, the GUI interface will no longer be hidden.
+KMS 19年方法独立为一个选择框的形式，理论上支持所有系统激活19年。
+The KMS 19-year method is independent of the form of a selection box that theoretically supports all system activations for 19 years.
+添加Server 2019支持(KMS通道，激活19年)。
+Added Server 2019 support (KMS channel, activated for 19 years).
+新增2个参数 /KMS 和 /C，加上以前的/Q参数，一共三个参数，可任意组合：
+Add 2 parameters /KMS and /C, plus the previous /Q parameters, a total of three parameters, can be arbitrarily combined:
+DigitalLicense.exe /Q		---Silently execute to get digital license.
+DigitalLicense.exe /Q /KMS /C	---The 19-year grace period is silently acquired in KMS mode, and Tokens parameters (such as 180-day KMS) are cleared throughout the process.
+DigitalLicense.exe /C		---There is a GUI interface, and the Tokens parameter will be cleared during the process of clicking the [Activate] button.
+
+v3.0
+添加LTSC 2019支持(KMS通道，激活19年)。
 v2.8
 修改程序图标。
 删除es-ec语言，所有西班牙语使用es-es。
