@@ -1,4 +1,18 @@
 @echo off
+echo.
+echo 是否需要先从服务器拉取？
+set /p input1=(是，请输入y；否则按任意键继续同步) ：
+if "%input1%"=="y" ( goto pull) else (goto push)
+
+:pull
+git pull github master
+echo 拉取完成
+echo.
+goto push
+exit
+
+:push
+echo.
 set /p tishi=请确认，所有的文件已经压缩到 50MB 以下
 set /p tishi2=请再次确认，所有的文件已经压缩到 50MB 以下
 echo 正在提交到暂存区...
